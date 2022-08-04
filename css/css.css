@@ -1,0 +1,708 @@
+:root {
+    --maincolor:#9e9e9e59;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+* img:hover {
+    transform: scale(1.1);
+}
+
+* img {
+    overflow: hidden;
+    transition: 2.5s;
+}
+
+
+body {font-family: "Oswald"}
+
+
+
+.heading-sec .search-icon a {
+    color: white;
+    margin-right: 10px;
+}
+
+.heading-sec  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.heading-sec  .icons i:hover {
+    background-color:#ffffffc2;
+    color: black;
+}
+
+.search-icon {
+    color: white;
+}
+
+.social-icons i {
+    padding: 10px 15px;
+    transition:0.2s;
+}
+
+.head-white{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.search-icon i {
+    padding: 10px 15px;
+}
+
+.search-icon i:hover {
+    background-color:var(--maincolor);
+    color:black;
+}
+
+.head-text h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    font-family:"Oswald";
+}
+
+.head-text span {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 3px 7px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.head-image {
+    background-image: url(../img/jane.jpg);
+    background-size: cover;
+    height: 110vh;
+    color: white;
+    background-position: top;
+}
+@media (max-width:769px) {
+    .head-image {
+    height: 60vh
+    }
+    .head-image .text {
+    padding: 50px 20px !important;
+    }
+
+    .head-image .text p {
+        font-size: 35px;
+    }
+    
+    .head-image .text p:first-of-type {
+        font-size: 25px;
+    }
+    .head-image .text p:last-of-type {
+        font-size: 35px;
+    }
+
+    .head-image a {
+        font-size: 15px !important;
+    }
+
+}
+
+.head-image .text {
+    padding: 250px 20px;
+
+}
+
+
+.head-image p:first-of-type {
+    font-size: 40px;
+    letter-spacing: 4.8px;
+    margin-bottom: 30px;
+}
+
+
+.head-image p:nth-child(2) {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.head-image a {
+    text-decoration: none;
+    background: #ffffff96;
+    color: black;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+.head-image a:hover {
+    background-color:#ffffffd6 ;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #eee;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+section .title-head {
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 30px 0;
+
+}
+
+
+section .para-head {
+    
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 25px;
+
+} 
+
+
+section .para-head span {
+    color: #777;
+}
+
+section .iconss {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+section .iconss .like {
+    color: black;
+    background: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: solid 1px #00000024;
+}
+
+
+section .iconss .like:hover {
+    background-color: var(--maincolor);
+}
+
+
+section .iconss .icon1 {
+    background: black;
+    padding: 10px 25px;
+    position: relative;
+    counter-increment: cont;
+}
+
+section .iconss .icon1 a {
+color: white;
+padding-right: 20px;
+text-decoration: none;
+}
+
+
+section .iconss div.icon1:hover {
+    background-color: var(--maincolor);
+    color: black;
+}
+
+
+section .iconss .icon1:before {
+    content: counter(cont);
+    position: absolute;
+    background: white;
+    right: 14px;
+    padding: 1px 7px;
+    top: 9px;
+}
+
+section .sec-fir .image0 {
+    text-align: center;
+}
+
+
+section .image0 img {
+    max-width: 700px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    
+    }
+
+section .container {
+    display: flex;
+    gap: 15px;
+}
+
+.sec-fir .low-sec .image img {
+    width: 80px;
+}
+
+section .sec-fir {
+    background: white;
+    height: 950px;
+}
+
+
+section .sec-fir text p {
+    
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+section .sec-fir text p span {
+    font-weight: 500;
+}
+
+    /* section .low-sec {
+        display: flex;
+        flex-direction: row;
+        margin-right: 362px;
+    } */
+
+    section .sec-fir p span {
+        color: #777;
+    }
+
+    section .low-sec {
+        display: flex;
+        margin-top: 90px;
+        margin-left: 15px;
+        display: flex;
+    }
+
+    section .sec-fir .text {
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 0 30px
+
+    }
+
+    section .low-sec .text {
+        margin-left: 15px;
+        margin-top: 10px;
+        width: 700px;
+        
+    }
+
+    section .sec-fir p {
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    section .rightsec {
+        width:60%;
+    }
+
+
+    aside {
+        width: 30%;
+    }
+
+
+    .sec-sec {
+        background: white;
+        height: 900px   ;
+    }
+    .sec-sec .image0 {
+        text-align: center;
+    }
+
+
+    .sec-sec .text  {
+        margin: 0 auto;
+        max-width: 700px;
+
+        padding: 0 30px
+    }
+
+    section .sec-fir p {
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+
+    .sec-three {
+        height: 900px;
+        background-color: white;
+    }
+
+    .sec-three .image0 {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .sec-three .text {
+    max-width: 700px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.sec-three .text p {
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.boxes {
+    width: 360px;
+}
+
+.boxes .box1 {
+    background: black;
+    color: white;
+    height: 350px;
+    margin-top: 30px;
+    margin-bottom: 35px;   
+    height: auto; 
+}
+
+
+
+.boxes .box1 .image {
+   filter: grayscale(75%);
+}
+
+.boxes .box1 .image img {
+width: 100%;
+}
+.boxes .box1 .text {
+    margin-top: 12px;
+    line-height: 1.4;
+    margin: 15px;
+    width: fit-content;
+    padding: 20px;
+}
+
+.box .box1 p {
+    padding-bottom: 30px;
+}
+
+aside {
+    width: 30%;
+}
+
+aside .box2 {
+    background: white;
+    margin-bottom: 35px;
+}
+
+aside h2.head-titled {
+    background: black;
+    color: white;
+    padding: 20px 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+aside .box2 .box-image {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+    border-bottom: 1px solid #0000002e;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+
+aside .box2 .box-image:hover {
+    background-color: var(--maincolor);
+}
+
+aside .box2 .box-image p {
+    font-weight: 300;   
+}
+
+
+aside .box2 .box-image h2 {
+    font-weight: 400;   
+}
+
+aside .box2 .box-image img {
+    width: 180px;
+    margin-bottom: 10px;
+}  
+
+aside .box2 .box-image.last  {
+    filter:sepia(50%);
+}
+
+aside .boxes .box3  {
+    height: 300px;
+    background: white;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+
+
+aside .boxes .box3 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+}
+
+aside .boxes .box4 {
+    margin-bottom: 35px;
+    background: white
+}
+
+aside .boxes .box4 .box-p {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}   
+
+aside .boxes .box4 .box .box-p .mark {
+    background-color: black;
+    color: white;
+}
+
+aside .boxes .box4 .box-p p {
+    margin-left: 20px;
+    background: #eee;
+    padding: 2px 9px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+aside .boxes .box4 .box-p div {
+    display: flex;
+    width: 100%;
+
+}
+aside .box5 .box .image {
+    width: 50%;
+    padding: 10px;
+}
+
+
+aside .box5 .box .image img {
+    width:150px;
+}
+
+aside .box5 {
+    background: white;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+aside .box5 .box  {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .box6 {
+    background: white;
+    margin-bottom: 35px;
+}
+
+
+
+aside .box6 .box {
+    padding: 15px;
+
+}
+aside .box6 .box i {
+    font-size: 20px;
+    margin-left: 5px;
+    transition: 0.2s;
+
+}
+
+
+aside .box6 .box i:hover {
+    background-color: var(--maincolor);
+}
+
+aside .box7 {
+    background: white;
+
+}
+
+
+aside .box7 form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+aside .box7 form label {
+    margin-bottom:10px;
+}
+
+aside .box7 form input {
+    margin-bottom:10px;
+    padding: 10px 10px;
+}
+
+aside .box7 form .input {
+    background: #ff0000b0;
+    border: none;
+    color: white;
+    transition: 0.2s;
+}
+
+aside .box7 form .input:hover {
+    background-color: var(--maincolor);
+    color: black;
+}
+
+@media (max-width:992px) {
+    section .container {
+        flex-direction: column;
+    }
+
+    section .rightsec {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    .boxes {
+        width: 100%;
+    }
+
+    aside .box5 .box .image img {
+        width: 401px;
+        max-width: 100%;
+}
+    }
+    section .image0 img {
+        width: 800px;
+        max-width: 100%;
+    }
+
+    section  .text {
+        width: 850px !important ;
+        max-width: 100% !important;
+
+    }
+    section .sec-fir {
+        height: 1100px;
+    }
+
+    @media (min-width:1000px) { 
+        .sec-sec {
+            height: 790px;
+        }
+        section .iconss {
+            margin-top: 15px !important;
+    }
+
+    }
+
+
+    @media (min-width:1000px) { 
+        .sec-three {
+            height: 810px;
+        }
+
+    }
+    
+    @media (max-width:667px) {  
+        .sec-sec    {
+
+            height: 775px;
+        }
+
+        section .iconss {
+            margin-top: 90px;
+    }
+
+    }
+
+    @media (min-width:667px) {  
+        section .iconss {
+            margin-top: 75px;
+    }
+
+    }
+
+    @media (max-width:667px) {  
+        .sec-three    {
+
+            height: 775px;
+        }
+    }
+
+footer {
+    background-color: #000000a6;
+    height: 180px;
+    position: relative;
+}
+
+footer .foot-sec  {
+display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 30px;
+    position: absolute;
+    top: 15%;
+}
+
+
+footer .foot-sec .bottom {
+    padding: 15px 25px;
+    background: black;
+    transition: 0.2s;
+}
+
+footer .foot-sec .bottom:hover {
+        background-color: var(--maincolor);
+        color: black;
+
+}
+
+
+footer .foot-sec .bottom a {
+background-color: transparent;
+padding-left: 15px;
+color: white;
+text-decoration: none;
+font-weight: 200;
+}
+
+
+footer .foot-sec .text p {
+color: white;
+font-weight: 300;
+
+}
+footer .foot-sec .bottom i {
+color: white;
+
+}
+
+footer .foot-sec .text a {
+    color: white;
+}
